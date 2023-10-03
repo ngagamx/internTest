@@ -20,4 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/x', [App\Http\Controllers\PageController::class, 'x'])->name('x');
+Route::get('/notifications', [App\Http\Controllers\PageController::class, 'notifications'])->name('notifications');
 
